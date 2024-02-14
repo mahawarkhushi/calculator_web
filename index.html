@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- css stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<!-- dot error -->
+<!-- zero error notification -->
+
+<body>
+  <div class="outer">
+    <main class = "calculator">
+      <header class="heading">
+        <h1>calc</h1>
+        <div class="indicator">
+          <h2>theme</h2>
+          <div class="toggle-box">
+            <div class="theme theme1">
+              <div class="text">1</div>
+            </div>
+            <div class="theme theme2">
+              <div class="text">2</div>
+            </div>
+            <div class="theme theme3">
+              <div class="text">3</div>
+            </div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </header>
+      <section class="screen">
+        <input  class="text-box" type="text">
+        <div class="zero-error">can't divide by zero</div>
+      </section> 
+      <section class="keypad">
+        <div class="icons">
+          <div class="num">7</div>
+          <div class="num">8</div>
+          <div class="num">9</div>
+          <div class ="delete">DEL</div>
+          <div class="num">4</div>
+          <div class="num">5</div>
+          <div class="num">6</div>
+          <div class="sign">+</div>
+          <div class="num">1</div>
+          <div class="num">2</div>
+          <div class="num">3</div>
+          <div class="sign">-</div>
+          <div class="sign">.</div>
+          <div class="num">0</div>
+          <div class="sign">/</div>
+          <div class="sign">x</div>
+          <div class ="reset">CLEAR</div>
+          <div class ="equal">=</div>
+        </div>
+      </section>
+      <audio class="audio" src="audio-2.mp3"></audio>
+    </main>
+  
+    <!-- <footer class="credits">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </footer> -->
+  </div>
+
+  <script src="themeChanger.js"></script>
+  <script src="calculation.js"></script>
+</body>
+
+</html>
